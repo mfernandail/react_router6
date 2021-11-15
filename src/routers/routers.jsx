@@ -1,4 +1,4 @@
-import { HashRouter } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
 import { Routes, Route } from "react-router-dom";
 import { About } from "../components/about";
 import Contact from "../components/contact";
@@ -7,13 +7,13 @@ import Nav from "../components/nav";
 
 export const Routers = () => {
   return (
-    <HashRouter>
+    <BrowserRouter>
       <Nav />
       <Routes>
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/" element={<Home />} />
       </Routes>                  
-    </HashRouter>
+    </BrowserRouter>
   )
 }
